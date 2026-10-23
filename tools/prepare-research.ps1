@@ -29,6 +29,7 @@ foreach ($archive in $Archives) {
   $hash = (Get-FileHash -LiteralPath $file.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
   $archiveRecords += [pscustomobject]@{ Name=$file.Name; SizeBytes=$file.Length; SHA256=$hash }
   Add-Type -AssemblyName System.IO.Compression
+  Add-Type -AssemblyName System.IO.Compression.FileSystem
   $zip = [IO.Compression.ZipFile]::OpenRead($file.FullName)
   try {
     foreach ($entry in $zip.Entries) {
