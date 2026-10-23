@@ -1,0 +1,53 @@
+GNU Parted 3.4
+Using /home/user/trashcan/sdb.bin
+Welcome to GNU Parted! Type 'help' to view a list of commands.
+(parted) p
+Error: The backup GPT table is corrupt, but the primary appears OK, so that will be used.
+OK/Cancel? ok
+Warning: Not all of the space available to /home/user/trashcan/sdb.bin appears to be used, you can fix the GPT to use all of the space (an extra 8192 blocks) or continue with the current setting?
+Fix/Ignore? i
+Model:  (file)
+Disk /home/user/trashcan/sdb.bin: 31.3GB
+Sector size (logical/physical): 512B/512B
+Partition Table: gpt
+Disk Flags:
+Number  Start   End     Size    File system  Name             Flags
+ 1      17.4kB  542kB   524kB                0:SBL1
+ 2      542kB   804kB   262kB                0:BOOTCONFIG
+ 3      804kB   1066kB  262kB                0:BOOTCONFIG1
+ 4      1066kB  2639kB  1573kB               0:QSEE
+ 5      2639kB  4212kB  1573kB               0:QSEE_1
+ 6      4212kB  4474kB  262kB                0:DEVCFG
+ 7      4474kB  4736kB  262kB                0:DEVCFG_1
+ 8      4736kB  4998kB  262kB                0:APDP
+ 9      4998kB  5260kB  262kB                0:APDP_1
+10      5260kB  5522kB  262kB                0:RPM
+11      5522kB  5785kB  262kB                0:RPM_1
+12      5785kB  6047kB  262kB                0:CDT
+13      6047kB  6309kB  262kB                0:CDT_1
+14      6309kB  6440kB  131kB                0:APPSBLENV
+15      6440kB  6571kB  131kB                0:APPSBLENV_1
+16      6571kB  6702kB  131kB                0:APPSBLENV_2
+17      6702kB  6833kB  131kB                0:APPSBLENV_3
+18      6833kB  7489kB  655kB                0:APPSBL
+19      7489kB  8144kB  655kB                0:APPSBL_1
+20      8144kB  8406kB  262kB                0:ART
+21      8406kB  8537kB  131kB                0:Factory_MIM
+22      8537kB  8668kB  131kB                0:Factory_MIM_1
+23      8668kB  8799kB  131kB                0:Factory_MIM_2
+24      8799kB  8930kB  131kB                0:Factory_MIM_3
+25      8930kB  15.2MB  6291kB               0:HLOS
+26      15.2MB  21.5MB  6291kB               0:HLOS_1
+27      21.5MB  156MB   134MB                rootfs
+28      156MB   160MB   4194kB               0:WIFIFW
+29      160MB   294MB   134MB                rootfs_1
+30      294MB   298MB   4194kB               0:WIFIFW_1
+31      298MB   299MB   524kB                0:ETHPHYFW
+32      299MB   320MB   21.0MB  ext4         configs
+33      320MB   857MB   537MB   ext4         SWR
+34      857MB   991MB   134MB   ext4         log
+35      991MB   1259MB  268MB   ext4         rootfs_data
+36      1259MB  1528MB  268MB   ext4         rootfs_data1
+37      1528MB  18.7GB  17.2GB  ext4         container
+38      18.7GB  31.3GB  12.6GB  ext4         user_data
+(parted)
